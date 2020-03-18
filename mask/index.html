@@ -20,6 +20,7 @@
     .info2{background-color:blue;}
     .info3{background-color:red;}
     .num{font-size: 50pt; margin-top: 20px; margin-bottom: 20px;}
+    #search{cursor: pointer;}
 </style>
 
 <h1>台中市口罩剩餘數量查詢系統</h1>
@@ -36,7 +37,7 @@
 <div style='text-align:center; margin-bottom: 10px;'>
     <select id='region_select'></select>
     <span id='region'>&emsp; </span>
-    <button onclick="search();">查詢</button>
+    <button id='search' onclick="search();">查詢</button>
 </div>
 
 <table>
@@ -56,6 +57,7 @@
 https://github.com/d3/d3/blob/master/LICENSE-->
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script>
+var msk = document.getElementById('mask_table');
 selection();
 
 function selection(){
@@ -119,7 +121,7 @@ function search(){
         tr.appendChild(td3);
         tr.appendChild(td4);
 
-        document.getElementById('mask_table').appendChild(tr);
+        msk.appendChild(tr);
         i++;
         }
 
@@ -136,7 +138,7 @@ function count(i){
     //成人口罩計數
     var sum = 0;
     for (let r=0; r<i; r++){
-        sum = sum + Number(document.getElementById('mask_table').rows[r].cells[2].innerText);
+        sum = sum + Number(msk.rows[r].cells[2].innerText);
     }
     document.getElementById('adult').innerText = String(sum);    
 }
@@ -145,13 +147,13 @@ function count2(i){
     //兒童口罩計數
     var sum2 = 0;
     for (let r=0; r<i; r++){
-        sum2 = sum2 + Number(document.getElementById('mask_table').rows[r].cells[3].innerText);
+        sum2 = sum2 + Number(msk.rows[r].cells[3].innerText);
     }
     document.getElementById('child').innerText = String(sum2);
 }
 
 function removerow(){ 
-    var row = document.getElementById("mask_table").rows.length;
+    var row = msk.rows.length;
     for (let i=0; i<row ;i++){
         document.getElementById("mask_table").deleteRow(-1);
     }
