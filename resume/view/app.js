@@ -65,7 +65,8 @@ var app = new Vue({
         },
         Robotics: {
             skill1: 'ROS',
-            skill2: 'OpenCV'
+            skill2: 'OpenCV',
+            skill3: 'C++'
         },
         MCU: {
             skill1: 'Arduino',
