@@ -53,7 +53,8 @@ var app = new Vue({
             skill2: 'CSS',
             skill3: 'Javascript',
             skill4: 'Bootstrap',
-            skill5: 'Vue.js'
+            skill5: 'jQuery',
+            skill6: 'Vue.js'
         },
         BEE: {
             skill1: 'PHP'
