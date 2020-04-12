@@ -1,4 +1,4 @@
-﻿var app = new Vue({
+var app = new Vue({
     //el: '#app',
     data: {
         head: {
@@ -8,8 +8,7 @@
         contact: {
             title: 'Contact',
             mail: 'did1335@gmail.com',
-            fb: '朱庭宏',
-            github: 'did1335'
+            fb: '朱庭宏'
         },
         icon: {
             mail: 'src/icon/gmail.svg',
@@ -33,44 +32,9 @@
             exp4: '2018永續環境黑客松技職盃全國大賽工作人員',
             date5: 'others',
             yellow: 'background: linear-gradient(135deg, rgba(250, 78, 78, 0.8), #fb5a22);',
-            //exp5: '網頁前端教育訓練課程講師',
             exp6: '產品設計助教, 氣壓學助教, 工程材料助教, 創意思考助教',
             exp7: '創意機器人研究社社長, 攝影生活美學社社長'
-        },
-        skills: {
-            title: 'Skills',
-            FEE: '前端',
-            BEE: '後端',
-            Management: '管理工具',
-            Robotics: '機器人學',
-            MCU: '單晶片',
-            Hstyle: 'font-size:20pt; display:flex; flex-wrap: wrap;'
-        },
-        FEE: {
-            skill1: 'HTML',
-            skill2: 'CSS',
-            skill3: 'Javascript',
-            skill4: 'Bootstrap',
-            skill5: 'jQuery',
-            skill6: 'Vue.js'
-        },
-        BEE: {
-            skill1: 'PHP',
-            skill2: 'MS SQL'
-        },
-        Management: {
-            skill1: 'Git',
-            skill2: 'Trello'
-        },
-        Robotics: {
-            skill1: 'ROS',
-            skill2: 'OpenCV',
-            skill3: 'C++'
-        },
-        MCU: {
-            skill1: 'Arduino',
-            skill2: 'ARM'
-        }
+        }        
     },
     methods: {
         goMail: function() {
