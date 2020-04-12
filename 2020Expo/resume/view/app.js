@@ -3,7 +3,7 @@
     data: {
         head: {
             my_photo: 'src/img/myphoto.jpg',
-            title: '朱庭宏 <span style="font-size: 20pt; vertical-align: baseline;">Hank, CHU</span>'
+            title: '朱庭宏 <br><span style="font-size: 20pt; vertical-align: baseline;">Hank, CHU</span>'
         },
         contact: {
             title: 'Contact',
